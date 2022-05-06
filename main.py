@@ -29,8 +29,7 @@ for value in dane:
         #print(value[0])    
         wynik_kolo =kolo(float(value[0]))
         wyniki.append(wynik_kolo)
-        #print(wynik_kolo)
-        
+        #print(wynik_kolo)  
     elif len(value) ==2:
         #print(float(value[0]),float(value[1]))
         wynik_prosokat = prostokat(float(value[0]),float(value[1]))
@@ -41,8 +40,8 @@ for value in dane:
         wynik_trojkat = trojkat(float(value[0]),float(value[1]),float(value[2]))
         wyniki.append(wynik_trojkat)
         #print(wynik_trojkat)
-    else:
+    elif len(value) >=4:
         print("Błąd: można podać maksymalnie 3 liczby")
-#print(wyniki)
-
-print(round(zsumuj_liste(wyniki),2))
+        break
+    else:
+        print(round(zsumuj_liste(wyniki),2))   
