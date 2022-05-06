@@ -43,5 +43,4 @@ for value in dane:
     elif len(value) >=4:
         print("Błąd: można podać maksymalnie 3 liczby")
         break
-    else:
-        print(round(zsumuj_liste(wyniki),2))   
+else: print(round(zsumuj_liste(wyniki),2))
